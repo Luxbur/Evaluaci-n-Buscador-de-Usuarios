@@ -1,0 +1,110 @@
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título  */
+h1 {
+    color: #343a40;
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+/* Estilo para el input */
+#buscar-usuario {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 15px;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#buscar-usuario:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para el botón */
+#btn-buscar {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-buscar:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#btn-buscar:active {
+    transform: translateY(0);
+}
+
+/* Estilo para el lista-usuarios */
+#lista-usuarios {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Estilo para los card-usuario*/
+.card-usuario {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card-usuario:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-usuario h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.card-usuario p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 0;
+}
