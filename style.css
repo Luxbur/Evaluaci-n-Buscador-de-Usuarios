@@ -73,11 +73,13 @@ h1 {
 /* Lista de usuarios */
 #lista-usuarios {
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-wrap: wrap; 
+    gap: 20px;        
+    justify-content: center; 
 }
+
 
 /* Tarjetas de usuario */
 .card-usuario {
@@ -90,6 +92,7 @@ h1 {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid #f8bbd0;
+
 }
 
 .card-usuario:hover {
