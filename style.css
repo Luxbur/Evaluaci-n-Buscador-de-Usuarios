@@ -1,8 +1,8 @@
-/* Estilo del cuerpo de la página */
+/* Fuentes y colores base */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9ecef;
-    color: #495057;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffe6f0;
+    color: #5a2350;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,58 +11,58 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo del container */
+/* Container principal */
 .container {
-    background-color: #ffffff;
+    background-color: #fff0f5;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
     text-align: center;
     width: 100%;
     max-width: 600px;
     margin-bottom: 20px;
 }
 
-/* Estilo para el título  */
+/* Título */
 h1 {
-    color: #343a40;
+    color: #d63384;
     margin-top: 0;
-    font-size: 2.2em;
+    font-size: 2.4em;
 }
 
-/* Estilo para el input */
+/* Input */
 #buscar-usuario {
     width: calc(100% - 20px);
     padding: 12px;
     margin-top: 15px;
-    border: 2px solid #ced4da;
-    border-radius: 8px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
     font-size: 1em;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #buscar-usuario:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #ff69b4;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 }
 
-/* Estilo para el botón */
+/* Botón */
 #btn-buscar {
     width: calc(100% - 20px);
     padding: 12px;
     margin-top: 15px;
-    background-color: #007bff;
+    background-color: #ff69b4;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #btn-buscar:hover {
-    background-color: #0056b3;
+    background-color: #e83e8c;
     transform: translateY(-2px);
 }
 
@@ -70,42 +70,101 @@ h1 {
     transform: translateY(0);
 }
 
-/* Estilo para el lista-usuarios */
+/* Lista de usuarios */
 #lista-usuarios {
     width: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
-/*Estilo para los card-usuario*/
+
+/* Tarjetas de usuario */
 .card-usuario {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  width: 100%;
-  max-width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f8bbd0;
 }
 
 .card-usuario:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(255, 20, 147, 0.2);
 }
 
 .card-usuario h3 {
-  margin-top: 0;
-  color: #333;
-  font-size: 1.5em;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+    margin-top: 0;
+    color: #c2185b;
+    font-size: 1.5em;
+    border-bottom: 2px dashed #f8bbd0;
+    padding-bottom: 10px;
 }
 
 .card-usuario p {
-  color: #666;
-  font-size: 1em;
-  margin-bottom: 0;
+    color: #6d4c41;
+    font-size: 1em;
+    margin: 0;
 }
 
+/* ✨ Nueva tarjeta de detalles */
+.card-detalles {
+    background-color: #fff0f5;
+    border: 2px solid #f48fb1;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(255, 182, 193, 0.3);
+    padding: 30px;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 90%;
+    text-align: left;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.card-detalles h2 {
+    color: #ad1457;
+    margin-top: 0;
+}
+
+.card-detalles p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #5a2350;
+}
+
+#cerrar-detalles {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#cerrar-detalles:hover {
+    background-color: #ec407a;
+    transform: translateY(-2px);
+}
+
+#cerrar-detalles:active {
+    transform: translateY(0);
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
