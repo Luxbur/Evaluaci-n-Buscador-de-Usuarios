@@ -1,4 +1,4 @@
-/* Fuentes y colores base */
+/* Estilo del body */
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #ffe6f0;
@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-/* Container principal */
+/* Estilo del container principal */
 .container {
     background-color: #fff0f5;
     padding: 30px;
@@ -23,14 +23,14 @@ body {
     margin-bottom: 20px;
 }
 
-/* Título */
+/* Estilo del Título */
 h1 {
     color: #d63384;
     margin-top: 0;
     font-size: 2.4em;
 }
 
-/* Input */
+/* Estilo del Input */
 #buscar-usuario {
     width: calc(100% - 20px);
     padding: 12px;
@@ -47,30 +47,7 @@ h1 {
     box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 }
 
-/* Botón */
-#btn-buscar {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-top: 15px;
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#btn-buscar:hover {
-    background-color: #e83e8c;
-    transform: translateY(-2px);
-}
-
-#btn-buscar:active {
-    transform: translateY(0);
-}
-
-/* Lista de usuarios */
+/* Estilo del lista-usuarios */
 #lista-usuarios {
     width: 100%;
     max-width: 1000px;
@@ -81,7 +58,7 @@ h1 {
 }
 
 
-/* Tarjetas de usuario */
+/* Estilo de card-usuario */
 .card-usuario {
     background-color: #fff;
     border-radius: 14px;
@@ -114,7 +91,7 @@ h1 {
     margin: 0;
 }
 
-/* ✨ Nueva tarjeta de detalles */
+/* Estilo de card-detalles */
 .card-detalles {
     background-color: #fff0f5;
     border: 2px solid #f48fb1;
@@ -160,7 +137,7 @@ h1 {
     transform: translateY(0);
 }
 
-/* Animación suave */
+/* Estilo de animación */
 @keyframes fadeIn {
     from {
         opacity: 0;
